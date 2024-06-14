@@ -13,7 +13,13 @@ function get(id) {
   return cloneDeep(data.find((item) => item.id === id));
 }
 
+function add(newItem) {
+  const index = data.push(cloneDeep(newItem)) - 1;
+  return cloneDeep(data[index]);
+}
+
 module.exports = {
   getAll,
   get,
+  add,
 };

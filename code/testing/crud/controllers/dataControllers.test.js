@@ -44,47 +44,116 @@ describe('the data controllers', () => {
     });
   });
 
-  describe('get', () => {
+  describe('getItem', () => {
     beforeAll(() => {
+      dataService.get.mockReturnValue(data[0]);
     });
     afterEach(() => {
+      dataService.get.mockClear();
     });
 
     it('sends the data item', () => {
+      // arrange
+      const req = {
+        params: {
+          id: 0,
+        },
+      };
+      const res = {
+        json: jest.fn(),
+      };
+
       // act
+      controllers.getItem(req, res);
+
       // assert
+      expect(res.json).toHaveBeenCalledWith(data[0]);
     });
 
     describe('when no item is found', () => {
       it('sends a 404 Not Found', () => {
         // arrange
+        const req = {
+          params: {
+            id: 0,
+          },
+        };
+        const res = {
+          sendStatus: jest.fn(),
+        };
+        dataService.get.mockReturnValue(undefined);
+
         // act
+        controllers.getItem(req, res);
+
         // assert
+        expect(res.sendStatus).toHaveBeenCalledWith(404);
       });
     });
   });
 
-  describe('add', () => {
+  describe('addItem', () => {
     let newItem;
 
     beforeAll(() => {
-
+      newItem = {
+        id: 1,
+        name: 'foo',
+      };
+      dataService.add.mockReturnValue(newItem);
     });
     afterEach(() => {
-
+      dataService.add.mockClear();
     });
 
     it('saves the new item', () => {
+      // arrange
+      const req = {
+        body: newItem,
+      };
+      const res = {
+        json: jest.fn(),
+      };
 
+      // act
+      controllers.addItem(req, res);
+
+      // assert
+      expect(dataService.add).toHaveBeenCalledWith(newItem);
     });
 
     it('sends the new item', () => {
+      // arrange
+      const req = {
+        body: newItem,
+      };
+      const res = {
+        json: jest.fn(),
+      };
 
+      // act
+      controllers.addItem(req, res);
+
+      // assert
+      expect(res.json).toHaveBeenCalledWith(newItem);
     });
 
     describe('when the item already exists', () => {
       it('sends a 409 Conflict', () => {
+        // arrange
+        const req = {
+          body: newItem,
+        };
+        const res = {
+          sendStatus: jest.fn(),
+        };
+        dataService.add.mockReturnValue(undefined);
 
+        // act
+        controllers.addItem(req, res);
+
+        // assert
+        expect(res.sendStatus).toHaveBeenCalledWith(409);
       });
     });
   });
