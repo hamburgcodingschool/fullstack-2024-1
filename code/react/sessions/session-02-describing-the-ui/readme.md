@@ -28,6 +28,14 @@ You'll learn to manage data and rendering within React components, which is esse
 - [Exercise F - The `children` Prop](./exercises/exercise-f-children-prop/readme.md)
 - [Exercise G - Integrating External Components](./exercises/exercise-g-external-components/readme.md)
 - ⭐️ [Exercise H - Message Board - Rendering a list of Posts](./exercises/exercise-h-message-board-post-list/readme.md)
+ 
+### Additional exercises
+
+- [Exercise I - Understanding Flexible Components](./exercises/exercise-i-flexible-components/readme.md)
+- [Exercise J - Creating Flexible Components: Button](./exercises/exercise-j-flexible-button/readme.md)
+- [Exercise K - Using Props for a Movie Component](./exercises/exercise-k-props-movies/readme.md)
+- [Exercise L - Rendering a List of Your Favorite Foods](./exercises/exercise-l-array-rendering-food/readme.md)
+- [Exercise M - Rendering a Todos List](./exercises/exercise-m-array-rendering-todos/readme.md)
 
 ## 📚 Resources
 
