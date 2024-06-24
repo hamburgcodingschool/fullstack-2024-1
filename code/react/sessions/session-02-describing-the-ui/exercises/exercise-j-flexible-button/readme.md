@@ -16,16 +16,16 @@ cd ~/hcs-react-course
 
 ### Create a new React Project
 
-For this exercise, you will start with a new React project called "react-02i-flexible-components". Use the following command to create the project:
+For this exercise, you will start with a new React project called "react-02j-flexible-button". Use the following command to create the project:
 
 ```
-npx degit alexclaes/vite-react-minimal react-02i-flexible-components
+npx degit alexclaes/vite-react-minimal react-02j-flexible-button
 ```
 
 After the setup is complete, proceed with the following steps:
 
 - Change into the directory that was created for this project:
-    - `cd react-02i-flexible-components`
+    - `cd react-02j-flexible-button`
 - Open the directory in your IDE:
     - Example for VS Code: `code .`
 - Install all necessary dependencies using `npm`:
@@ -139,7 +139,7 @@ import Button from './components/Button';
 Render the Button into the JSX:
 
 ```jsx
-<Buttton>Click me</Buttton>
+<Button>Click me</Button>
 ```
 
 ### Step 2: Use Multiple Different Buttons
