@@ -1,4 +1,4 @@
-# Session 04: Complex data in state
+# Session 04: Complex Interactivity
 
 ## 💪 Motivation
 
@@ -22,7 +22,7 @@ You'll explore best practices for rendering lists and managing data entered in f
 - [Exercise B - Todo List - Add Todos](./exercises/exercise-b-todo-list-add/readme.md)
 - [Exercise C - Todo List - Update Todos](./exercises/exercise-c-todo-list-update/readme.md)
 - [Exercise D - Todo List - Delete Todos](./exercises/exercise-d-todo-list-delete/readme.md)
-- [Exercise E - Message Board with Form to Add Posts](./exercises/exercise-e-message-board-add-posts/readme.md)
+- ⭐️ [Exercise E - Message Board with Form to Add Posts](./exercises/exercise-e-message-board-add-posts/readme.md)
 
 ## 📚 Resources
 
