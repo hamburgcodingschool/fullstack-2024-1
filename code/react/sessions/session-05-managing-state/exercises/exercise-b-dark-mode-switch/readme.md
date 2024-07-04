@@ -68,7 +68,7 @@ export default function DarkModeSwitch() {
 Add logic to add a class name `dark-mode` to the div element when dark mode is enabled.
 
 ```jsx
-<div className={isDarkMode && 'dark-mode'}>
+<div className={isDarkMode ? 'dark-mode': ''}>
 ```
 
 Open the global styles file:
@@ -206,7 +206,7 @@ Pass the state and function to the `DarkModeSwitch` component:
 Apply the `className` to the root Element of the `Header` component:
 
 ```jsx
-<header className={isDarkMode && 'dark-mode'}>
+<header className={isDarkMode ? 'dark-mode': ''}>
 ``` 
 
 
@@ -224,7 +224,7 @@ export default function Header() {
     }
 
     return (
-        <header className={isDarkMode && 'dark-mode'}>
+        <header className={isDarkMode ? 'dark-mode': ''}>
             <p>This is the Header</p>
             <DarkModeSwitch isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         </header>
@@ -266,7 +266,7 @@ Pass the state and function to the `DarkModeSwitch` component:
 Apply the `className` to the root Element of the `Footer` component:
 
 ```jsx
-<footer className={isDarkMode && 'dark-mode'}>
+<footer className={isDarkMode ? 'dark-mode' : ''}>
 ``` 
 
 
@@ -284,7 +284,7 @@ export default function Footer() {
     }
 
     return (
-        <footer className={isDarkMode && 'dark-mode'}>
+        <footer className={isDarkMode ? 'dark-mode' : ''}>
             <p>This is the Footer</p>
             <DarkModeSwitch isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         </footer>
@@ -356,7 +356,7 @@ Pass the state and function to the `Header` and `Footer` components:
 Apply the `className` to the root Element of the `App` component:
 
 ```jsx
-<div className={`App ${isDarkMode && 'dark-mode'}`}>
+<div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
 ```
 
 Your `App` component should now look like this:
@@ -370,7 +370,7 @@ export default function App() {
     }
     
     return (
-        <div className={`App ${isDarkMode && 'dark-mode'}`}>
+        <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
             <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
             <Footer isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         </div>
