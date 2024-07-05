@@ -7,3 +7,4 @@
 - [Session 03 - Adding Interactivity](./sessions/session-03-adding-interactivity/readme.md)
 - [Session 04 - Complex Interactivity](./sessions/session-04-complex-interactivity/readme.md)
 - [Session 05 - Managing State](./sessions/session-05-managing-state/readme.md)
+- [Session 06 - Routing](./sessions/session-06-routing/readme.md)
