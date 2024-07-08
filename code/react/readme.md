@@ -8,3 +8,4 @@
 - [Session 04 - Complex Interactivity](./sessions/session-04-complex-interactivity/readme.md)
 - [Session 05 - Managing State](./sessions/session-05-managing-state/readme.md)
 - [Session 06 - Routing](./sessions/session-06-routing/readme.md)
+- [Session 07 - API Connection](./sessions/session-07-api-connection/readme.md)
