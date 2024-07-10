@@ -20,6 +20,17 @@ function getItem(req, res) {
   res.json(item);
 }
 
+function addItem(req, res) {
+  const item = dataService.add(req.body);
+
+  if (!item) {
+    res.sendStatus(409);
+    return;
+  }
+
+  res.json(item);
+}
+
 router.get('/', getAll);
 
 router.get('/:id', getItem);
@@ -29,4 +40,5 @@ module.exports = {
   // functions are only exported for the tests
   getAll,
   getItem,
+  addItem,
 };
