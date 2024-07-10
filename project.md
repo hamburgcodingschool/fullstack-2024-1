@@ -116,12 +116,18 @@ You can choose any of these optional bonus tasks, in any order.
 
 - The form is cleared after adding a new blog post and the user gets directed to the Dashboard, again.  
 
-  To navigate between views, you can use the push method of the vue-router such as :
+  To navigate between views, you can use the [useNavigate](https://reactrouter.com/en/main/hooks/use-navigate) hook of react-router-dom such as :
 
   
 
   ```
-      this.$router.push({ path: '/home' });
+  export default function MyPage() {
+    const naviate = useNavigate();
+
+    // ...
+
+    navigate('/');
+  }
   ```
   
 
@@ -192,4 +198,4 @@ You can choose any of these optional bonus tasks, in any order.
   - A link to your GitHub repository for the BackEnd app if implemented  
   - If you worked in a team, both your names
   - If you did any bonus tasks, list them
-  - Send it to Helder (helder@hamburgcodingschool.com) and Teresa (teresa@hamburgcodingschool.com)
+  - Send it to Sebastian (sebastian.hoffmann@shoff.de)
