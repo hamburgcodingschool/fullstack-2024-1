@@ -29,9 +29,9 @@ The dashboard shows an overview of the all blog posts and a Map.
 
 ![Menu Bar](/img/menu-bar.jpg)
 
-### 3. World Map with Maplibre API
+### 3. World Map with Maplibre or Leaflet API
 
-- Research for a method to integrate the Maplibre API into a React-Component to display a world map.
+- Research for a method to integrate the Maplibre or Leaflet API into a React-Component to display a world map.
 - For each blog post, put a marker on the map at the location of the post.
 - Initially the map gets centered by the newest blog post entry.
 
