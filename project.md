@@ -173,7 +173,7 @@ You can choose any of these optional bonus tasks, in any order.
 - You can ask the trainer for help anytime.
 - For communication, use the Slack channel.
 - You get two overall consultation classes but ping the trainer for help as often as needed.
-- **Deadline: September 27th 2023, 18pm**
+- **Deadline: July 25th 2024, 18:00**
 
 
 ## Submission
