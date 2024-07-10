@@ -180,7 +180,7 @@ You can choose any of these optional bonus tasks, in any order.
 
       - Add two files `.env.development.local` and `.env.production.local` into your project root folder. Theses files are ignored by git.
       - In these file you can define custom environment variables like that: `VITE_TILES_API_KEY=MyKey-12345`
-      - Within your component you can use it with `{process.env.VUE_APP_MY_API_KEY}`
+      - Within your component you can use it with `{import.meta.env.VITE_TILES_API_KEY}`
       - After every change in this files you have to restart your development server.
 
       For more information check out: https://cli.vuejs.org/guide/mode-and-env.html#modes
