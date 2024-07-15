@@ -187,7 +187,7 @@ You can choose any of these optional bonus tasks, in any order.
       - Add two files `.env.development.local` and `.env.production.local` into your project root folder. Theses files are ignored by git.
       - In these file you can define custom environment variables like that: `VITE_TILES_API_KEY=MyKey-12345`
         - Note that the `VITE_` prefix has to stay or it won't be exposed to the code.
-      - Within your component you can use it with `{import.meta.env.VITE_TILES_API_KEY}`
+      - Within your component you can use it with `import.meta.env.VITE_TILES_API_KEY`
       - After every change in this files you have to restart your development server.
 
       For more information check out: https://vitejs.dev/guide/env-and-mode.html
